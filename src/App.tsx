@@ -1,5 +1,4 @@
 import { Carousel } from './components/Carousel'
-import './App.css'
 
 function App() {
   const getRandomHeight = () => Math.floor(Math.random() * (800 - 480 + 1)) + 480
