@@ -1,0 +1,18 @@
+.app {
+  min-height: 100vh;
+  background: white;
+  padding: 0;
+}
+
+.app-header {
+  display: none;
+}
+
+.app-main {
+  width: 100%;
+  padding: 0;
+}
+
+.app-footer {
+  display: none;
+}
