@@ -54,6 +54,14 @@ export const Carousel: React.FC<CarouselProps> = ({ items, title, baseColor = '#
     }
   }, [emblaApi, onSelect])
 
+  const scrollPrev = useCallback(() => {
+    if (emblaApi) emblaApi.scrollPrev()
+  }, [emblaApi])
+
+  const scrollNext = useCallback(() => {
+    if (emblaApi) emblaApi.scrollNext()
+  }, [emblaApi])
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -98,6 +106,8 @@ export const Carousel: React.FC<CarouselProps> = ({ items, title, baseColor = '#
                 >
                   <h3>{item.title}</h3>
                   <p>{item.content}</p>
+                  <button className="embla__button embla__button--prev" onClick={scrollPrev}>&#9664;</button>
+                  <button className="embla__button embla__button--next" onClick={scrollNext}>&#9654;</button>
                 </div>
               </motion.div>
             )
