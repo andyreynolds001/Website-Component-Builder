@@ -4,7 +4,6 @@ import Desktop_feature_grid_1_1_features from './assets/Desktop-feature-grid_1-1
 import Desktop_feature_grid_1_3_features from './assets/Desktop-feature-grid_1-3-features.png'
 import Desktop_feature_grid_1 from './assets/Desktop-feature-grid_1.png'
 import Footer from './assets/Footer.png'
-import React_svg from './assets/react.svg'
 import Team_Members from './assets/Team Members.png'
 
 function App() {
@@ -16,7 +15,6 @@ function App() {
     Desktop_feature_grid_1_3_features,
     Desktop_feature_grid_1,
     Footer,
-    React_svg,
     Team_Members
   ]
 
