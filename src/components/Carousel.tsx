@@ -103,7 +103,7 @@ export const Carousel: React.FC<CarouselProps> = ({ items, title, baseColor = '#
                 <div 
                   ref={(el) => { slideRefs.current[index] = el }}
                   className="carousel-item"
-                  style={{ height: `${item.height}px` }}
+                  style={{ height: item.imageUrl ? 'auto' : `${item.height}px` }}
                 >
                   {item.imageUrl ? (
                     <img src={item.imageUrl} alt={item.title} className="carousel-item-image" />
