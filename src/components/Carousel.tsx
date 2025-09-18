@@ -9,6 +9,7 @@ interface CarouselItem {
   content: string
   color: string
   height: number
+  imageUrl?: string // Add imageUrl for the image path
 }
 
 interface CarouselProps {
@@ -102,8 +103,13 @@ export const Carousel: React.FC<CarouselProps> = ({ items, title, baseColor = '#
                 <div 
                   ref={(el) => { slideRefs.current[index] = el }}
                   className="carousel-item"
-                  style={{ backgroundColor: baseColor, height: `${item.height}px` }}
+                  style={{ height: `${item.height}px` }}
                 >
+                  {item.imageUrl ? (
+                    <img src={item.imageUrl} alt={item.title} className="carousel-item-image" />
+                  ) : (
+                    <div className="carousel-item-placeholder" style={{ backgroundColor: baseColor }}></div>
+                  )}
                   <h3>{item.title}</h3>
                   <p>{item.content}</p>
                   <button className="embla__button embla__button--prev" onClick={scrollPrev}>&#9664;</button>
