@@ -3,8 +3,13 @@ import AA_Hero_vertical from './assets/AA Hero-vertical.png'
 import Desktop_feature_grid_1_1_features from './assets/Desktop-feature-grid_1-1-features.png'
 import Desktop_feature_grid_1_3_features from './assets/Desktop-feature-grid_1-3-features.png'
 import Desktop_feature_grid_1 from './assets/Desktop-feature-grid_1.png'
-import Footer from './assets/Footer.png'
 import Team_Members from './assets/Team Members.png'
+import Desktop_CTA_card_3 from './assets/Desktop-CTA-card_3.png'
+import Desktop_CTA_image_bg_1 from './assets/Desktop-CTA-image-bg_1.png'
+import Desktop_CTA_image_bg_2 from './assets/Desktop-CTA-image-bg_2.png'
+import Desktop_gallery_grid_1 from './assets/Desktop-gallery-grid_1.png'
+import Desktop_team_member_1 from './assets/Desktop-team-member_1.png'
+import Desktop_testimonials_1 from './assets/Desktop-testimonials_1.png'
 
 function App() {
   const getRandomHeight = () => Math.floor(Math.random() * (800 - 480 + 1)) + 480
@@ -14,8 +19,13 @@ function App() {
     Desktop_feature_grid_1_1_features,
     Desktop_feature_grid_1_3_features,
     Desktop_feature_grid_1,
-    Footer,
-    Team_Members
+    Team_Members,
+    Desktop_CTA_card_3,
+    Desktop_CTA_image_bg_1,
+    Desktop_CTA_image_bg_2,
+    Desktop_gallery_grid_1,
+    Desktop_team_member_1,
+    Desktop_testimonials_1
   ]
 
   const getRandomImageUrl = () => {
